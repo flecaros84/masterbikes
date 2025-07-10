@@ -23,9 +23,9 @@ public class ReporteInventarioService {
     private final RestTemplate restTemplate;
 
     // URLs base (pueden venir de application.properties)
-    @Value("http://localhost:8083/api/v1/sucursales")
+    @Value("${SUCURSAL_SERVICE_URL:http://localhost:8083/api/v1/sucursales}")
     private String sucursalServiceUrl;        // ej. http://localhost:8081/api/v1/sucursales
-    @Value("http://localhost:8082/api/v1/catalogo")
+    @Value("${CATALOGO_SERVICE_URL:http://localhost:8082/api/v1/catalogo}")
     private String catalogoServiceUrl;        // ej. http://localhost:8082/api/v1
 
     public List<InventarioReporteDTO> obtenerPorSucursal(Long sucursalId) {

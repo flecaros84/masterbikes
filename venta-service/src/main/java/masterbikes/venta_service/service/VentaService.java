@@ -23,10 +23,10 @@ public class VentaService {
     private final VentaRepository ventaRepo;
     private final RestTemplate restTemplate;
 
-    @Value("http://localhost:8082")
+    @Value("${CATALOGO_SERVICE_URL:http://localhost:8082}")
     private String catalogoServiceUrl;
 
-    @Value("http://localhost:8084")
+    @Value("${INVENTARIO_SERVICE_URL:http://localhost:8084}")
     private String inventarioServiceUrl;
 
     public VentaService(VentaRepository ventaRepo, RestTemplate restTemplate) {

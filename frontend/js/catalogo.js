@@ -11,7 +11,7 @@ const clearFilters    = document.getElementById('clearFilters');
 const gridView        = document.getElementById('gridView');
 const listView        = document.getElementById('listView');
 
-const GATEWAY_URL = 'http://localhost:8080';
+const GATEWAY_URL = 'https://api-gateway-5ww5.onrender.com';
 
 // Mapa global para traducir sucursalId → nombre
 let branchMap = {};
