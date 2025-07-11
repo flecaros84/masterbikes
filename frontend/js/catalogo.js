@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.bikeData = window.bikeData || [];
 
-    fetch('http://localhost:8080/api/catalogo/api/v1/catalogo/bicicletas')
+    fetch(`${GATEWAY_URL}/api/catalogo/api/v1/catalogo/bicicletas`)
         .then(res => {
             if (!res.ok) throw new Error('Error al obtener el catálogo');
             return res.json();
@@ -258,7 +258,7 @@ function loadProducts() {
     </div>
   `;
 
-    fetch('http://localhost:8080/api/catalogo/api/v1/catalogo/bicicletas')
+    fetch(`${GATEWAY_URL}/api/catalogo/api/v1/catalogo/bicicletas`)
         .then(resp => {
             if (!resp.ok) throw new Error('HTTP ' + resp.status);
             return resp.json();
@@ -358,10 +358,10 @@ function renderProducts(products) {
           <p class="card-text"><strong>Stock total:</strong> ${product.stock}</p>
           <ul class="list-unstyled mb-2">
             ${product.sucursales.map(s =>
-                 `<li><strong>${
+            `<li><strong>${
                 branchMap[s.sucursalId] || `Sucursal ${s.sucursalId}`
-                }:</strong> ${s.cantidad}</li>`
-            ).join('')}
+            }:</strong> ${s.cantidad}</li>`
+        ).join('')}
           </ul>
           <button class="btn btn-primary add-to-cart-btn"
                   data-product-id="${product.id}"

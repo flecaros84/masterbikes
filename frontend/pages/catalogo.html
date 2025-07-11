@@ -312,75 +312,13 @@
     </style>
 </head>
 <body class="futuristic-theme">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/logo.png" alt="MasterBikes" height="30" class="d-inline-block align-text-top me-2">
-                MasterBikes
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="arriendo.html">Arriendos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="catalogo.html">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personalizacion.html">Personalización</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Bicicletas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="orion.html">Orion</a></li>
-                            <li><a class="dropdown-item" href="merak1.html">Merak 1</a></li>
-                            <li><a class="dropdown-item" href="polux7.html">Polux 7</a></li>
-                            <li><a class="dropdown-item" href="Aura6.html">Aura 6</a></li>
-                            <li><a class="dropdown-item" href="halley.html">Halley</a></li>
-                            <li><a class="dropdown-item" href="luna20.html">Luna 20</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="formulario.html">Contacto</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav align-items-center">
-                    <!-- Cart button -->
-                    <li class="nav-item me-2">
-                        <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
-                            <i class="bi bi-cart3"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
-                                0
-                            </span>
-                        </button>
-                    </li>
-                    <!-- User dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="userDropdown">
-                            <i class="bi bi-person-circle"></i>
-                            <span class="ms-1 d-none d-lg-inline" id="username">Mi Cuenta</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#" id="loginBtn"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a></li>
-                            <li><a class="dropdown-item" href="#" id="registerBtn"><i class="bi bi-person-plus me-2"></i>Registrarse</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#" id="logoutBtn"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+    <header>
+        <object
+                type="text/html"
+                data="../components/topbar.html"
+                style="width:100%; height:100px; border:none; overflow:hidden;">
+        </object>
+    </header>
     <!-- Main Content -->
     <main class="container py-5 mt-5">
         <!-- Catalog Header -->
@@ -531,68 +469,18 @@
             </a>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">MasterBikes</h5>
-                    <p>Tu tienda especializada en bicicletas de alta calidad, accesorios y servicios de personalización para ciclistas exigentes.</p>
-                    <div class="social-icons mt-4">
-                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="catalogo.html" class="text-white text-decoration-none">Catálogo</a></li>
-                        <li class="mb-2"><a href="arriendo.html" class="text-white text-decoration-none">Arriendos</a></li>
-                        <li class="mb-2"><a href="personalizacion.html" class="text-white text-decoration-none">Personalización</a></li>
-                        <li class="mb-2"><a href="formulario.html" class="text-white text-decoration-none">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">Ayuda</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Envíos y Devoluciones</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Garantía</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3">
-                    <h5 class="text-uppercase mb-4">Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. Providencia 1234, Santiago</li>
-                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +56 2 2345 6789</li>
-                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> contacto@masterbikes.cl</li>
-                        <li class="mb-2"><i class="bi bi-clock me-2"></i> Lun-Vie: 9:00 - 18:00</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p class="small mb-md-0">© 2023 MasterBikes. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-md-end">
-                        <img src="../images/payment-methods.png" alt="Métodos de pago" class="img-fluid" style="max-height: 30px;">
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <footer>
+        <object
+                id="footerObj"
+                type="text/html"
+                data="/components/footer.html"
+                style="width:100%; border:none; overflow:hidden;"
+                onload="
+      this.style.height =
+        this.contentDocument.documentElement.scrollHeight + 'px';
+    ">
+        </object>
     </footer>
     
     <!-- Login Modal -->
