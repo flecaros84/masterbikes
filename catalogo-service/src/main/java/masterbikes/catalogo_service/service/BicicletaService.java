@@ -76,6 +76,10 @@ public class BicicletaService {
                 .sillin(sillin)
                 .esPredefinida(dto.isEsPredefinida())
                 .modelo(dto.getModelo())
+                .precioUnitario(dto.getPrecioUnitario())
+                .marca(dto.getMarca())
+                .descripcion(dto.getDescripcion())
+                .valoracion(dto.getValoracion())
                 .build();
 
         // Reutiliza la validación existente

@@ -67,7 +67,12 @@
             </ul>
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item me-2">
-                    <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <button
+                            class="btn btn-outline-light btn-locked position-relative"
+                            type="button"
+                            disabled
+                            aria-disabled="true"
+                    >
                         <i class="bi bi-cart3"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">0</span>
                     </button>

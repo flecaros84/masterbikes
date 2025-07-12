@@ -14,5 +14,11 @@ public class BicicletaDTO {
 
     private boolean esPredefinida;
     private String modelo;
+    private Double precioUnitario;
+
+    private String marca;
+    private String descripcion;
+    private Double valoracion;
+
 
 }
